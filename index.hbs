@@ -2,18 +2,19 @@
 
 	<!-- Adding all the posts, one by one. -->
 	{{#each posts}}
+	
 		<h2>
-			<a href="{{url}}">{{{title}}}</a>
+		<a href="{{url}}">{{{title}}}</a>
 		</h2>
-		
+
 		<!-- The date the post was posted -->
 		Posted
 		<time datetime="{{date createdAt 'YYYY-MM-DDTHH:mm'}}">
-            {{date createdAt}}
-        </time>
+			{{date createdAt}}
+		</time>
 
 		{{{text}}}
-		
+
 	{{/each}} <!-- End of adding the posts -->
 
 {{> footer}}
