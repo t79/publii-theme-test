@@ -1,2 +1,13 @@
 {{> head}}
+
+	<!-- Adding all the posts, one by one. -->
+	{{#each posts}}
+		<h2>
+			<a href="{{url}}">{{{title}}}</a>
+		</h2>
+		
+		{{{text}}}
+		
+	{{/each}} <!-- End of adding the posts -->
+
 {{> footer}}
