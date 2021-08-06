@@ -1,2 +1,30 @@
 {{> head}}
+
+	<!-- Adding all the posts, one by one. -->
+	{{#each posts}}
+	
+		<!-- Post title -->
+		<h2>
+		<a href="{{url}}">{{{title}}}</a>
+		</h2>
+
+		<!-- The date the post was posted -->
+		Posted
+		<time datetime="{{date createdAt 'YYYY-MM-DDTHH:mm'}}">
+			{{date createdAt}}
+		</time>
+
+		<!-- The tags attached to the post -->
+		{{#if tags}}
+			Tags
+			{{#each tags}}
+				<a href="{{url}}">{{name}}</a>
+			{{/each}}
+		{{/if}}
+
+		{{{text}}}
+
+	{{/each}} <!-- End of adding the posts -->
+
+
 {{> footer}}
