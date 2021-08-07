@@ -20,8 +20,14 @@
 				<a href="{{url}}">{{name}}</a>
 			{{/each}}
 		{{/if}}
-
-		{{{text}}}
+			
+		<!-- The post body, the whole text or only a excerpt -->
+		{{#if hasCustomExcerpt}}
+			{{{ excerpt }}}
+			<a href="{{url}}">Read more</a>
+		{{else}}
+			{{{ text }}}
+		{{/if}}
 
 	{{/each}} <!-- End of adding the posts -->
 
