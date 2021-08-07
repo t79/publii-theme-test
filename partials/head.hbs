@@ -5,6 +5,13 @@
 	
 	<link rel="stylesheet" href="{{css 'style.css' }}">
 	
+	<!-- Title for the page -->
+	{{#if title}}
+		<title>{{title}}</title>
+		{{else}}
+		<title>{{@website.name}}</title>
+	{{/if}}
+	
 	</head>
 	
 	<body>
