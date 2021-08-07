@@ -1,4 +1,7 @@
 
+html {
+	font-size: 14px;
+}
 
 body {
 	font-size: var(--base-font-size);
