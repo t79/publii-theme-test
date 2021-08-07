@@ -1,6 +1,6 @@
 {
 	"name": "publii-theme-test",
-	"version": "0.0.96",
+	"version": "0.0.99",
 	"author": "Terje",
 	"renderer": {
         "relatedPostsNumber": 3,
@@ -106,6 +106,24 @@
             "min": 0,
             "max": 1,
             "step": 0.05
+        },
+    	{
+    		"name": "contentBackgroundColor",
+    		"label": "Content background color",
+    		"group": "Background",
+    		"value": "#FFFFFFaa",
+    		"type": "colorpicker"
+		},
+        {
+            "name": "contentBackgroundBlur",
+            "label": "Content background blur",
+            "group": "Background",
+            "note": "",
+            "value": "3",
+            "type": "range",
+            "min": 0,
+            "max": 15,
+            "step": 1
         },
         {
             "name": "baseFontSize",

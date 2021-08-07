@@ -10,6 +10,13 @@ body {
 	font-family: Verdana, sans-serif;
 	color: var(--base-text-color);
 	background-color: var(--background-color);
+	padding: 0;
+	margin: 0;
+}
+
+div {
+	margin: 0;
+	padding: 0;
 }
 
 /* The main layout containers ******************************* */
@@ -34,10 +41,20 @@ body {
 #content-main-column {
 	display: block;
 	width: 70vw;
+	border-radius: 0.5em;
 }
 
 footer {
 	width: 100vw;
+}
+
+/* content, sheared properties */
+
+.content-block {
+	background-color: var(--content-background-color);
+	-webkit-backdrop-filter: blur(var(--content-background-blur));
+	backdrop-filter: blur(var(--content-background-blur));
+	padding: 0.8em;
 }
 
 /* background image ***************************************** */
