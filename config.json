@@ -1,6 +1,6 @@
 {
 	"name": "publii-theme-test",
-	"version": "0.0.12",
+	"version": "0.0.39",
 	"author": "Terje",
 	"renderer": {
         "relatedPostsNumber": 3,
@@ -79,7 +79,52 @@
                 "field": "frontSource",
                 "value": "default"
             }]
-        }
+        },
+        {
+    		"name": "backgroundColor",
+    		"label": "Background color",
+    		"group": "Background",
+    		"value": "#FFFFFF",
+    		"type": "colorpicker"
+		},
+        {
+            "name": "backgroundPicture",
+            "label": "Upload background image",
+            "group": "Background",
+            "note": "",
+            "value": "",
+            "type": "upload",
+            "upload": true
+        },
+        {
+            "name": "backgroundPictureOpacity",
+            "label": "Background image opacity",
+            "group": "Background",
+            "note": "",
+            "value": "0.40",
+            "type": "range",
+            "min": 0,
+            "max": 1,
+            "step": 0.05
+        },
+        {
+            "name": "baseFontSize",
+            "label": "Base font size",
+            "group": "Text",
+            "note": "Base font size in em unit",
+            "value": "1",
+            "type": "range",
+            "min": 0.5,
+            "max": 2,
+            "step": 0.05
+        },
+        {
+			"name": "textColor",
+			"label": "Text color",
+			"group": "Text",
+			"value": "#132020",
+			"type": "colorpicker"
+		}
     ],
     "postConfig": [
        
