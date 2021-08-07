@@ -5,3 +5,24 @@
 	</head>
 	
 	<body>
+	
+	<!-- Adding logo or site title to the page -->
+	
+	<!-- Adding link to frontpage if it is not that -->
+	{{#is "index"}}{{else}}
+		<a href="{{@website.url}}">
+	{{/is}}
+	
+	{{#if @website.logo}}
+    	<img src="{{@website.logo}}" alt="{{@website.name}}" 
+    		width="{{@website.logoSize.width}}" height="{{@website.logoSize.height}}">
+	{{else}}
+    	{{@website.name}}
+	{{/if}}
+	
+	<!-- Closing link if not frontpage -->
+	{{#is "index"}}{{else}}
+		</a>
+	{{/is}}
+	
+	<!-- End adding logo... -->
