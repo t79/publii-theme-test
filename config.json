@@ -1,10 +1,6 @@
 {
 	"name": "publii-theme-test",
-<<<<<<< HEAD
-	"version": "0.0.23",
-=======
 	"version": "0.0.14",
->>>>>>> 4a8819ca56f4e1a8a5b2ebf34f1a8f0b9fe50a7f
 	"author": "Terje",
 	"renderer": {
         "relatedPostsNumber": 3,
