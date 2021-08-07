@@ -1,6 +1,9 @@
 
 
 body {
+	font-size: var(--base-font-size);
+	font-family: Verdana, sans-serif;
+	color: var(--base-text-color);
 	background-color: var(--background-color);
 }
 
