@@ -1,3 +1,9 @@
+
+
+body {
+	background-color: var(--background-color);
+}
+
 /* background image */
 
 #background-image-container {
@@ -17,4 +23,5 @@
     object-fit: cover;
     display: block;
     overflow: hidden;
+    opacity: var(--background-image-opacity);
 }

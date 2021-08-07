@@ -1,6 +1,6 @@
 {
 	"name": "publii-theme-test",
-	"version": "0.0.26",
+	"version": "0.0.37",
 	"author": "Terje",
 	"renderer": {
         "relatedPostsNumber": 3,
@@ -81,6 +81,13 @@
             }]
         },
         {
+    		"name": "backgroundColor",
+    		"label": "Background color",
+    		"group": "Background",
+    		"value": "#FFFFFF",
+    		"type": "colorpicker"
+		},
+        {
             "name": "backgroundPicture",
             "label": "Upload background image",
             "group": "Background",
@@ -91,10 +98,10 @@
         },
         {
             "name": "backgroundPictureOpacity",
-            "label": "Opacity",
+            "label": "Background image opacity",
             "group": "Background",
-            "note": "The background image opacity",
-            "value": "0.15",
+            "note": "",
+            "value": "0.40",
             "type": "range",
             "min": 0,
             "max": 1,
