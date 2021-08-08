@@ -24,7 +24,28 @@ function validate(event) {
 
 // called when the reCaptcha test has passed. Sending the message
 function onSubmit(token) {
-	alert('thanks ' + document.getElementById('form-input-name').value);
+
+	let apiUrl = 'https://api.publiitest.t79.it/contact';
+	let data = {
+		'name': document.getElementById('form-input-name').value,
+	}
+
+	// Sending the data to the server. and processes the response.
+	fetch( apiUrl, {
+		method: 'Post',
+		headers: {
+			'Content-Type': 'application/json'
+		},
+		body: JSON.stringify(data)
+	})
+	.then(response => response.json())
+	.then(data => { 
+		alert('Server says: ' + data);
+	})
+	.catch((error) => {
+		console.error('Error', error);
+	})
+	
 }
 
 // activates the submit button when there are a text in the text area
