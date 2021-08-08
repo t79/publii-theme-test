@@ -1,6 +1,6 @@
 {
 	"name": "publii-theme-test",
-	"version": "0.0.101",
+	"version": "0.0.102",
 	"author": "Terje",
 	"renderer": {
         "relatedPostsNumber": 3,
@@ -34,7 +34,8 @@
     },
     "postTemplates": {
    		"blank-and-title": "'Blank' with title for 'non-post' page",
-   		"contact-form": "Contact form"
+   		"contact-form": "Contact form",
+   		"index-list": "Index list"
 	},
     "menus": {
     

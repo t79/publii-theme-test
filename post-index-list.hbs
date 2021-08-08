@@ -1,0 +1,18 @@
+{{> head}}
+
+	<!-- Adding the post -->
+	{{#post}}
+		<h1>{{{title}}}</h1>
+		
+		{{{text}}}
+		
+	{{/post}} <!-- End of post -->
+	
+	{{#each @website.contentStructure.posts}}
+		<a href="{{url}}">{{title}}</a>
+		{{#if @last}}{{else}}
+			<br/>
+		{{/if}}
+	{{/each}}
+
+{{> footer}}
