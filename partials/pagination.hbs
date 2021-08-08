@@ -1,0 +1,26 @@
+
+{{#if @pagination}}
+	
+	Page {{@pagination.currentPage}} of {{@pagination.totalPages}}.
+	
+	{{#if @pagination.previousPage}}
+		<a href="{{@pagination.previousPageUrl}}">
+		{{#checkIf @website.postsOrdering '==' "desc"}}
+			Newer posts
+		{{else}}
+			Older posts
+		{{/checkIf}}
+		</a>
+	{{/if}}
+	
+	{{#if @pagination.nextPage}}
+		<a href="{{@pagination.nextPageUrl}}">
+		{{#checkIf @website.postsOrdering '==' "desc"}}
+			Older posts
+		{{else}}
+			Newer posts
+		{{/checkIf}}
+		</a>
+	{{/if}}
+	
+{{/if}}
