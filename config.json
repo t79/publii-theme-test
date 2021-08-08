@@ -1,0 +1,109 @@
+{
+	"name": "publii-theme-test",
+	"version": "0.0.100",
+	"author": "Terje",
+	"renderer": {
+        "relatedPostsNumber": 3,
+        "renderRelatedPosts": false,
+        "renderSimilarPosts": false,
+        "renderPrevNextPosts": true,
+        "createContentStructure": true,
+        "includeFeaturedInPosts": true,
+        "tagsIncludeFeaturedInPosts": true,
+        "authorsIncludeFeaturedInPosts": true,
+        "featuredPostsNumber": 0,
+        "tagsFeaturedPostsNumber": 0,
+        "authorsFeaturedPostsNumber": 0,
+        "createTagPages": true,
+        "createAuthorPages": true,
+        "createTagsList": true,
+        "create404page": false,
+        "createSearchPage": false,
+        "customHTML": {
+            "beforePost": "Before every post",
+            "afterPost": "After every post"
+        }
+    },
+    "supportedFeatures": {
+        "blockEditor": true,
+        "tagsList": true,
+        "tagImages": true,
+        "authorImages": true,
+        "searchPage": false,
+        "errorPage": true
+    },
+    "postTemplates": {
+   		"blank-and-title": "'Blank' with title for 'non-post' page"
+	},
+    "menus": {
+    
+    },
+	"config": [
+        {
+            "name": "postsPerPage",
+            "label": "Posts per page",
+            "value": 5,
+            "type": "number"
+        },
+        {
+            "name": "tagsPostsPerPage",
+            "label": "Tags posts per page",
+            "value": 5,
+            "type": "number"
+        },
+        {
+            "name": "authorsPostsPerPage",
+            "label": "Authors posts per page",
+            "value": 5,
+            "type": "number"
+        },
+        {
+            "name": "excerptLength",
+            "label": "Excerpt length",
+            "value": 25,
+            "type": "number"
+        },
+        {
+            "name": "logo",
+            "label": "Website logo",
+            "value": "",
+            "type": "upload",
+            "upload": true
+        }
+    ],
+    "customConfig": [
+    	{
+            "name": "frontReadMore",
+            "group": "Layout",
+            "label": "Read more button",
+            "value": true,
+            "type": "checkbox",
+            "dependencies": [{
+                "field": "frontSource",
+                "value": "default"
+            }]
+        }
+    ],
+    "postConfig": [
+       
+    ],
+	"files": {
+        "ignoreAssets": [
+            "scss",
+            ".DS_Store"
+        ],
+        "assetsPath": "assets",
+        "partialsPath": "partials",
+        "responsiveImages": {
+            "galleryImages": {
+                "sizes": "",
+                "dimensions": {
+                    "thumbnail": {
+                        "width": 60,
+                        "height": "auto"
+                    }
+                }
+            }
+        }
+    }
+}
