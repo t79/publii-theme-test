@@ -1,0 +1,18 @@
+{{> head}}
+
+	<!-- Adding the post -->
+	{{#post}}
+		<h1>{{{title}}}</h1>
+		
+		{{{text}}}
+		
+		<form>
+			<textarea id="form-input-message" placeholder="... (required)"></textarea>
+			<input type="text" id="form-input-name" placeholder="name" />
+			<input type="email" id="form-input-email" placeholder="email" />
+			<button id="form-button-submit">Submit</button>
+		</form>
+		
+	{{/post}} <!-- End of post -->
+	
+{{> footer}}
