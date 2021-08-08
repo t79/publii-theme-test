@@ -1,6 +1,6 @@
 {
 	"name": "publii-theme-test",
-	"version": "0.0.90",
+	"version": "0.0.102",
 	"author": "Terje",
 	"renderer": {
         "relatedPostsNumber": 3,
@@ -32,6 +32,11 @@
         "searchPage": false,
         "errorPage": true
     },
+    "postTemplates": {
+   		"blank-and-title": "'Blank' with title for 'non-post' page",
+   		"contact-form": "Contact form",
+   		"index-list": "Index list"
+	},
     "menus": {
     
     },
@@ -124,7 +129,7 @@
 			"group": "Text",
 			"value": "#132020",
 			"type": "colorpicker"
-		}
+        }
     ],
     "postConfig": [
        
