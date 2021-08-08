@@ -6,8 +6,18 @@
 		
 		{{{text}}}
 		
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+		<script src="{{js 'contact-form.js'}}"></script>
+		
 		<form>
-			<textarea id="form-input-message" placeholder="... (required)"></textarea>
+			<!-- reCaptcha 'config', calling onSubmit() when test passes -->
+			<div id='recaptcha' class="g-recaptcha"
+          		data-sitekey="6LeiSOkbAAAAADbPIZ-N25jlqd7jTnCrc1UphtpE"
+          		data-callback="onSubmit"
+          		data-size="invisible">
+          	</div>
+			<textarea id="form-input-message" placeholder="... (required)"
+				onkeyup="stoppedTyping(this)"></textarea>
 			<input type="text" id="form-input-name" placeholder="name" />
 			<input type="email" id="form-input-email" placeholder="email" />
 			<button id="form-button-submit">Submit</button>
