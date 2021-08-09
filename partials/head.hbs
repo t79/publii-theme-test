@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	
+	<link rel="stylesheet" href="{{css 'style.css' }}">
+	
+	<!-- Title for the page -->
+	{{#if title}}
+		<title>{{title}}</title>
+		{{else}}
+		<title>{{@website.name}}</title>
+	{{/if}}
+	
+	</head>
+	
+	<body>
+	
+	<!-- Adding logo or site title to the page -->
+	
+	<!-- Adding link to frontpage if it is not that -->
+	{{#is "index"}}{{else}}
+		<a href="{{@website.url}}">
+	{{/is}}
+	
+	{{#if @website.logo}}
+    	<img src="{{@website.logo}}" alt="{{@website.name}}" 
+    		width="{{@website.logoSize.width}}" height="{{@website.logoSize.height}}">
+	{{else}}
+    	{{@website.name}}
+	{{/if}}
+	
+	<!-- Closing link if not frontpage -->
+	{{#is "index"}}{{else}}
+		</a>
+	{{/is}}
+	
+	<!-- End adding logo... -->
