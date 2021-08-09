@@ -1,0 +1,23 @@
+
+{{#unless level}}
+	<nav>
+{{/unless}}
+
+	<ul>
+		{{#each items}}
+			<li>
+				{{#if link}}
+					<a href="{{menuUrl}}">{{label}}</a>
+				{{else}}
+					<span>{{label}}</span>
+				{{/if}}
+				{{#if items}}
+					{{> menu}}
+				{{/if}}
+			</li>
+		{{/each}}
+	</ul>
+
+{{#unless level}}
+	</nav>
+{{/unless}}

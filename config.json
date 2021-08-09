@@ -33,7 +33,7 @@
         "errorPage": true
     },
     "menus": {
-    
+    	"footerMenu": "Footer menu"   
     },
 	"config": [
         {
