@@ -37,6 +37,9 @@ function onSubmit(token) {
 	let apiUrl = 'https://api.publiitest.t79.it/contact';
 	let data = {
 		'name': document.getElementById('form-input-name').value,
+		'email': document.getElementById('form-input-email').value,
+		'message': messageTextElement.value,
+		'consent': consentElement.checked
 	}
 
 	// Sending the data to the server. and processes the response.
