@@ -2,14 +2,23 @@
 document.addEventListener('readystatechange', function() {
 	if (document.readyState === 'interactive') {
 		onload();
-		document.getElementById('form-button-submit').disabled = true;
 	}
 });
 
+// required form fields
+var messageTextElement;
+var consentElement;
+
+// send button
+var sendButtonElement;
+
 // called when the page are loading
 function onload() {
-	var element = document.getElementById('form-button-submit');
-	element.onclick = validate;
+	window.sendButtonElement = document.getElementById('form-button-submit');
+	window.sendButtonElement.onclick = validate;
+	window.sendButtonElement.disabled = true;
+	window.messageTextElement = document.getElementById('form-input-message');
+	window.consentElement = document.getElementById('form-consent');
 }
 
 // called when submit button is pressed, and it 'activates' reCaptcha
@@ -48,12 +57,11 @@ function onSubmit(token) {
 	
 }
 
-// activates the submit button when there are a text in the text area
-function stoppedTyping(formElm) {
-	if(formElm.value.length > 0) { 
-		document.getElementById('form-button-submit').disabled = false; 
+// activates the submit button when there are a message and consent
+function checkRequirements() {
+	if(window.messageTextElement.value.length > 0 && window.consentElement.checked) { 
+		window.sendButtonElement.disabled = false; 
 	} else { 
-		document.getElementById('form-button-submit').disabled = true;
+		window.sendButtonElement.disabled = true;
 	}
 }
-

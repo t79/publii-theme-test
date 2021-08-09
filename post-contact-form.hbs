@@ -17,9 +17,21 @@
           		data-size="invisible">
           	</div>
 			<textarea id="form-input-message" placeholder="... (required)"
-				onkeyup="stoppedTyping(this)"></textarea>
+				onkeyup="checkRequirements()"></textarea>
 			<input type="text" id="form-input-name" placeholder="name" />
 			<input type="email" id="form-input-email" placeholder="email" />
+			
+			<input type="checkbox" id="form-consent" onclick="checkRequirements()"/>
+			<label for="form-consent">
+				You consent that this message is sent by email to the owner 
+				of this website and that he can make contact once if that is possible. 
+				You are not required to send any personal information. 
+				If any, you consent that it for an indefinite time are stored 
+				in an email archive. The receiver is not a company, 
+				and this will not be used for marketing or commercial use 
+				whiteout further notice.
+			</label>
+			
 			<button id="form-button-submit">Submit</button>
 		</form>
 		
