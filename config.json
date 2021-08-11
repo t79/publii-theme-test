@@ -1,6 +1,6 @@
 {
 	"name": "publii-theme-test",
-	"version": "0.0.90",
+	"version": "0.0.203",
 	"author": "Terje",
 	"renderer": {
         "relatedPostsNumber": 3,
@@ -19,6 +19,7 @@
         "createTagsList": true,
         "create404page": false,
         "createSearchPage": false,
+        "includeHandlebarsInHelpers": true,
         "customHTML": {
             "beforePost": "Before every post",
             "afterPost": "After every post"

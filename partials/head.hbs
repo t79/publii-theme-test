@@ -3,6 +3,12 @@
 
 	<head>
 	
+	{{#is 'post'}}
+		{{#post}}
+			{{breadcrumb this}}
+		{{/post}}
+	{{/is}}
+	
 	<link rel="stylesheet" href="{{css 'style.css' }}">
 	
 	<!-- Title for the page -->
